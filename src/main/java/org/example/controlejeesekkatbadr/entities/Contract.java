@@ -12,7 +12,7 @@ import java.util.Date;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "TYPE_CONTRAT")
 @Data @NoArgsConstructor @AllArgsConstructor
-public abstract class ContratAssurance {
+public abstract class Contract {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date dateSouscription;

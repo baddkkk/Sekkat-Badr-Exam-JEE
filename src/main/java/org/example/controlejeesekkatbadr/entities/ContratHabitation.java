@@ -8,7 +8,7 @@ import lombok.Data;
 import org.example.controlejeesekkatbadr.enums.TypeLogement;
 
 @Entity @DiscriminatorValue("HABITATION") @Data
-public class ContratHabitation extends ContratAssurance {
+public class ContratHabitation extends Contract {
     @Enumerated(EnumType.STRING)
     private TypeLogement typeLogement;
     private String adresse;
